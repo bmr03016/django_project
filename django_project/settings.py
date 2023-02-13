@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog',
+    'board', # 맨 마지막 데이터에도 쉼표를 달아두면 좋은 점
+             # -> 다음에 추가할 때 까먹어도 봐줌
+             # -> 추가되거나 제거된 코드 비교 할 때
 ]
 
 MIDDLEWARE = [
@@ -105,11 +109,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False # Summer Time 여부
 
 
 # Static files (CSS, JavaScript, Images)

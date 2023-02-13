@@ -1,0 +1,4 @@
+# DB 관련
+db.sqlite3
+
+migrations

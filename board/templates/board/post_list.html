@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for post in post_list %} 
+    <p>
+    글번호: {{ post.pk }}<br>
+    제목: {{ post.title }}<br>
+    내용: {{ post.content }}<br>
+
+    {% endfor %}
+
+    {% for p in posts %}
+        # 작성일 포맷
+        {{ p.crated_at | date:"Y-m-d" }} 
+        <p>
+        # 수정일 포맷
+        {{ p.updated_at | date:"Y-m-d" }} 
+    {% endfor  %}    
+</body>
+</html>
